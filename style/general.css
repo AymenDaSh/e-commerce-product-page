@@ -1,0 +1,35 @@
+body{
+  font-family: "Kumbh Sans", Arial;
+  margin: 0;
+  
+  font-size: 16px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  height: 1px;                   /* Set the thickness of the line */
+  background-color: hsl(0, 0%, 83%);  /* Set the color */
+  border: none;                  /* Remove default border */
+  width: 100%;                   /* Adjust the width */
+}
+
+main{
+  display: flex;
+  gap: 100px;
+}
+
+
+button {
+  transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+}
+
+/* Apply opacity change on hover */
+button:hover {
+  opacity: 0.5;
+}
+

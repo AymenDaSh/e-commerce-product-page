@@ -1,0 +1,201 @@
+.hamburger{
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 25px;
+  display: none;
+  cursor: pointer;
+}
+
+.nav-links-mobile {
+  list-style: none; /* Remove bullets */
+  z-index: 2;
+  position: fixed;
+  left: -100%; /* Initially off the screen */
+  transition: left 0.3s ease;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 100; /* Ensure it covers the content but is below the nav */
+}
+
+/* When the menu is active */
+.overlay.active {
+  opacity: 0.5;
+  visibility: visible;
+}
+
+/* style the menu*/
+
+.close-menu {
+  font-size: 35px;
+  color: gray;
+  margin-bottom: 50px;
+  display: block;
+  cursor: pointer;
+}
+
+.nav-links-mobile li{
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: black;
+}
+
+.nav-links-mobile li a {
+  font-size: 25px;
+  color: black;
+}
+
+@media screen and (max-width: 450px ) {
+  /*  styling the menu and header */
+  header{
+    background-color: white;
+    margin: 0;
+  }
+
+  .hamburger{
+    display: block;
+  }
+
+  .nav-links{
+    display: none;
+  }
+  .nav-links-mobile {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: -100%; /* Offscreen */
+    flex-direction: column;
+    background-color: white;
+    width: 250px;
+    height: 100%;
+    padding: 10px 30px;
+    transition: left 0.3s ease; /* Smooth slide-in */
+    z-index: 101;
+  }
+
+  /* When the menu is active */
+  .nav-links-mobile.active {
+    left: 0; /* Slide in from the left */
+  }
+
+                  /* styleing the product page */
+
+  main{
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 140px;
+  }
+  body{
+    margin-bottom: 150px;
+  }
+  
+  .product-picture{
+    width: 100%;
+    border-radius: 0;
+  }
+  .product-thumbnails{
+    display: none;
+  }
+
+  .product-pictures{
+    position: relative;
+  }
+  .prev{
+    left: 15px;
+    bottom: 40%;
+  }
+
+  .next{
+    right: 15px;
+    bottom: 40%;
+  }
+
+  /* product info section */
+
+  .product-info{
+    padding: 10px 20px;
+  }
+
+  .price-container{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .price-discounted{
+    margin: 0;
+  }
+
+  .add-to-cart-row{
+    flex-direction: column;
+  }
+
+  .quantity-selector{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .button-minus,
+  .button-plus{
+  font-size: 30px; 
+}
+
+  .add-to-cart-btn{
+    padding: 20px 40px;
+    font-size: 15px;
+  }
+
+  /* setting the cart */
+
+  .cart-info-title{
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .cart-info{
+    top: 80px;
+    left: -295px;
+
+    width: 390px;
+    height: 300px;
+  }
+
+  .cart-empty{
+    height: 200px;
+    font-size: 20px;
+  }
+
+  .product-in-cart{
+    width: auto;
+    gap:10px;
+  }
+  .delete-product{
+    width: 20px;
+  }
+
+  .product-in-cart-name,
+  .product-total-price{
+    font-size: 18px;
+  }
+
+  .product-image-cart-info{
+    width: 60px;
+  }
+  
+  .checkout-btn{
+    padding: 20px 40px;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+}

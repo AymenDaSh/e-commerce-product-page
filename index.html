@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/general.css">
+  <link rel="stylesheet" href="style/product.css">
+  <link rel="stylesheet" href="style/lightbox.css">
+  <link rel="stylesheet" href="style/mobile.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-left">
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <a href="#"><img src="images/logo.svg" alt="logo"></a>
+        <ul class="nav-links">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-icons">
+        <div class="cart-container">
+          <a href="#"><img class="cart-icon" src="images/icon-cart.svg" alt="cart"></a>
+          <div class="cart-info">
+            <p class="cart-info-title">Cart</p>
+            <hr>
+            <div class="cart-empty js-cart-info">
+              Your cart is empty
+            </div>
+          </div>
+          <div class="cart-notif js-cart-notif">3</div>
+        </div>
+        <a href="#"><img class="avatar-icon" src="images/image-avatar.png" alt="account"></a>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="overlay" id="overlay"></div> <!-- Add this overlay div -->
+  <ul class="nav-links-mobile">
+    <span class="close-menu">&times;</span>
+    <li><a href="#">Collections</a></li>
+    <li><a href="#">Men</a></li>
+    <li><a href="#">Women</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <main>
+    <div class="product-pictures">
+      <img class="product-picture js-product-picture" alt="main-picture" src="images/image-product-1.jpg">
+      <span class="prev js-prev-mobile">&#10094;</span>
+      <span class="next js-next-mobile">&#10095;</span>
+      <div class="product-thumbnails">
+        <img class="product-thumbnail js-product-thumbnail" src="images/image-product-1-thumbnail.jpg" alt="thumbnail">
+        <img class="product-thumbnail js-product-thumbnail" src="images/image-product-2-thumbnail.jpg" alt="thumbnail">
+        <img class="product-thumbnail js-product-thumbnail" src="images/image-product-3-thumbnail.jpg" alt="thumbnail">
+        <img class="product-thumbnail js-product-thumbnail" src="images/image-product-4-thumbnail.jpg" alt="thumbnail">
+      </div>
+    </div>
+    <div class="product-info js-product-info">
+      <!-- product info rendered using javascirpt-->
+    </div>
+  </main>
+
+  <!-- the lightbox -->
+  <div class="lightbox-container">
+    <div class="product-pictures product-pictures-lightbox">
+      <img class="product-picture product-picture-lightbox js-product-picture-lightbox" alt="main-picture" src="images/image-product-1.jpg">
+      <span class="close">&times;</span>
+      <span class="prev js-prev-lightbox">&#10094;</span>
+      <span class="next js-next-lightbox">&#10095;</span>
+    <div class="product-thumbnails product-thumbnails-lightbox">
+      <img class="product-thumbnail product-thumbnail-lightbox js-product-thumbnail-lightbox" src="images/image-product-1-thumbnail.jpg" alt="thumbnail">
+      <img class="product-thumbnail product-thumbnail-lightbox js-product-thumbnail-lightbox" src="images/image-product-2-thumbnail.jpg" alt="thumbnail">
+      <img class="product-thumbnail product-thumbnail-lightbox js-product-thumbnail-lightbox" src="images/image-product-3-thumbnail.jpg" alt="thumbnail">
+      <img class="product-thumbnail product-thumbnail-lightbox js-product-thumbnail-lightbox" src="images/image-product-4-thumbnail.jpg" alt="thumbnail">
+    </div>
+  </div>
+
+  <script src="script/product-page.js" type="module"></script>
+</body>
+</html>

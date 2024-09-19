@@ -1,0 +1,159 @@
+.product-pictures{
+  width: auto;
+  height: auto;
+  
+}
+
+.product-picture{
+  width: 350px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.product-thumbnails{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.product-thumbnail{
+  width: 70px;
+  border-radius: 10px;
+  transition: opacity 0.3s ease; 
+  cursor: pointer;
+  
+}
+
+.product-thumbnail:hover{
+  opacity: 0.3;
+}
+
+
+
+
+
+
+/* products info seciton */
+
+.product-info{
+  width: auto;
+  height: auto;
+}
+
+.product-company{
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(104, 112, 125);
+  margin-bottom: 0;
+}
+
+h1{
+  max-width: 400px;
+  font-size: 44px;
+  margin-top: 10px;
+}
+
+.product-description{
+  max-width: 430px;
+  font-size: 16px;
+  color: rgb(104, 112, 125);
+}
+
+/* styling the price container */
+
+.price-container {
+  display: flex;
+  flex-direction: column; /* Stack the rows vertically */
+  gap: 5px; /* Space between the price row and the discounted price */
+}
+
+.price-row{
+  display: flex;
+  align-items: center; /* Align items vertically center */
+  gap: 10px; /* Space between the product price and discount */
+}
+
+.product-price{
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0;
+}
+.discount{
+  background-color: black;
+  color: white;
+  font-size: 13px;
+  padding: 4px 6px;
+  border-radius: 5px;
+}
+
+.price-discounted{
+  text-decoration: line-through; /* Strike-through for the original price */
+  color: gray; /* Grayed-out color to indicate discount */
+  font-size: 16px;
+  margin-top: 0;
+}
+
+/* styling add to cart container*/
+
+
+.add-to-cart-row{
+  display: flex;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+
+.quantity-selector{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-color: hsl(223, 64%, 98%);
+  border-radius: 10px;
+
+  padding: 0px 5px;
+  height: 40px;
+
+}
+
+.button-minus,
+.button-plus{
+  width: auto;
+  height: auto;
+  font-size: 16px;
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  font-size: 20px;
+
+  border: none;
+  background-color: hsl(223, 64%, 98%);
+  
+  cursor: pointer;
+}
+
+.quantity{
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.add-to-cart-btn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 5px 40px;
+  font-weight: 700;
+  background-color: hsl(26, 100%, 55%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn img{
+  height: 15px;  
+  filter: brightness(0) saturate(100%); /* Turns the image black */
+}
+
+
